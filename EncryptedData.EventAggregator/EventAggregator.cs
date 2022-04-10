@@ -12,6 +12,13 @@ namespace EncryptedData.EventAggregator
             _handlers.Add(EventHandlerThread.UI, new DefaultEventThreadHandler());
             _handlers.Add(EventHandlerThread.Background, new BackgroundEventThreadHandler());
         }
+
+        protected EventAggregator(IEventThreadHandler uiThreadHandler)
+        {
+            _handlers.Add(EventHandlerThread.Default, new DefaultEventThreadHandler());
+            _handlers.Add(EventHandlerThread.UI, uiThreadHandler);
+            _handlers.Add(EventHandlerThread.Background, new BackgroundEventThreadHandler());
+        }
         
         public TEventType GetEvent<TEventType>() where TEventType : IBaseEvent
         {
