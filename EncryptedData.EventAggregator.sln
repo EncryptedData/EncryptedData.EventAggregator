@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedData.EventAggregat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedData.EventAggregator.Wpf", "EncryptedData.EventAggregator.Wpf\EncryptedData.EventAggregator.Wpf.csproj", "{2B4E51EE-D795-444C-BD44-073BFD0E47A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptedData.EventAggregator.Avalonia", "EncryptedData.EventAggregator.Avalonia\EncryptedData.EventAggregator.Avalonia.csproj", "{A23E7737-4860-46CE-8AAD-1C1304E607AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2B4E51EE-D795-444C-BD44-073BFD0E47A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B4E51EE-D795-444C-BD44-073BFD0E47A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B4E51EE-D795-444C-BD44-073BFD0E47A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A23E7737-4860-46CE-8AAD-1C1304E607AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23E7737-4860-46CE-8AAD-1C1304E607AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23E7737-4860-46CE-8AAD-1C1304E607AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23E7737-4860-46CE-8AAD-1C1304E607AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
