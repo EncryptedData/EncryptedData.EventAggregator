@@ -41,7 +41,14 @@ namespace EncryptedData.EventAggregator
 
         public void SetHandler(EventHandlerThread eventHandlerThread, IEventThreadHandler handler)
         {
-            _handlers.Add(eventHandlerThread, handler);
+            if (_handlers.ContainsKey(eventHandlerThread))
+            {
+                _handlers[eventHandlerThread] = handler;
+            }
+            else
+            {
+                _handlers.Add(eventHandlerThread, handler);
+            }
         }
 
         public IReadOnlyDictionary<EventHandlerThread, IEventThreadHandler> EventThreadHandlers => _handlers;
